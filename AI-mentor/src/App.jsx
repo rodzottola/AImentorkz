@@ -1,15 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import ChatForm from "./components/chatForm/ChatForm";
-import FootPage from "./components/footPage/FootPage";
-import HeaderPage from "./components/headerPage/HeaderPage";
+import { BrowserRouter } from "react-router-dom";
+import RoutesViews from "./components/routes/RoutesViews";
 
 const App = () => {
 
   return (
     <>
-      <HeaderPage />
-      <ChatForm />
-      <FootPage />
+      <BrowserRouter>
+        <RoutesViews />
+      </BrowserRouter>
     </>
   );
 };
