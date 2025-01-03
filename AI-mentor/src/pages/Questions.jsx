@@ -6,7 +6,7 @@ const Questions = () => {
     const [preguntas, setPreguntas] = useState([]);
 
     const obtenerPreguntas = async () => {
-        const preguntasApi = await fetch('http://localhost:3000/api/preguntas');
+        const preguntasApi = await fetch('https://aimentor-back.onrender.com/api/preguntas');
         const data = await preguntasApi.json();
         console.log(data.preguntas);
         setPreguntas(data.preguntas);

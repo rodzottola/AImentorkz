@@ -33,7 +33,7 @@ const ChatForm = () => {
         setRespuesta(null); // Limpiar respuesta previa
 
         try {
-            const response = await fetch("http://localhost:3000/api/preguntas", {
+            const response = await fetch("https://aimentor-back.onrender.com/api/preguntas", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
